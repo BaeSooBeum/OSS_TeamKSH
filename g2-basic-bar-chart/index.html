@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>G2 - Basic Bar Chart</title>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@observablehq/notebook-inspector@1/dist/notebook-inspector-style.css">
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+<script type="module">
+
+import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1?module";
+import notebook from "./g2-basic-bar-chart.js";
+
+Runtime.load(notebook, Inspector.into(document.body));
+
+</script>

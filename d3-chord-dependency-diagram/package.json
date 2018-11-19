@@ -1,0 +1,9 @@
+{
+  "name": "d3-chord-dependency-diagram",
+  "main": "d3-chord-dependency-diagram.js",
+  "version": "91.0.0",
+  "author": {
+    "name": "Mike Bostock",
+    "url": "https://beta.observablehq.com/@mbostock"
+  }
+}

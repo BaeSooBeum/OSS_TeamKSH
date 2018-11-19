@@ -1,0 +1,12 @@
+{
+  "name": "g2-basic-bar-chart",
+  "main": "g2-basic-bar-chart.js",
+  "version": "48.0.0",
+  "author": {
+    "name": "Jiazhe Wang",
+    "url": "https://beta.observablehq.com/@jiazhewang"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
