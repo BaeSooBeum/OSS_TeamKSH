@@ -69,20 +69,17 @@ const m0 = {
             name: "data",
             inputs: ["d3"],
             value: (async function(d3) {
-                const imports = await d3.json("https://gist.githubusercontent.com" +
-                    "/mbostock/1044242" +
-                    "/raw/3ebc0fde3887e288b4a9979dad446eb434c54d08" +
-                    "/flare.json");
+                  const imports = await d3.json("./json.json");
 
-                const indexByName = new Map;
-                const nameByIndex = new Map;
-                const matrix = [];
-                let n = 0;
+  const indexByName = new Map;
+  const nameByIndex = new Map;
+  const matrix = [];
+  let n = 0;
 
-                // 지정된 클래스 이름에 대한 Flare 패키지 이름을 반환한다.
-                function name(name) {
-                    return name.substring(0, name.lastIndexOf(".")).substring(6);
-                }
+  // 지정된 클래스 이름에 대한 Flare 패키지 이름을 반환한다.
+  function name(name) {
+    return name;
+  }
 
                 // 각 패키지 이름에 대해 고유한 인덱스를 계산한다.
                 imports.forEach(d => {
